@@ -40,23 +40,23 @@ def gradient_text(text, colors):
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')    
     
-    brand_name =  "        ****           *      ***** **         *******    \n"
-    brand_name += "       *  *************    ******  ***       *       ***  \n"
-    brand_name += "      *     *********     **   *  * **      *         **  \n"
-    brand_name += "      *     *  *         *    *  *  **      **        *   \n"
-    brand_name += "       **  *  **             *  *   *        ***          \n"
-    brand_name += "          *  ***            ** **  *        ** ***        \n"
-    brand_name += "         **   **            ** ** *          *** ***      \n"
-    brand_name += "         **   **            ** ***             *** ***    \n"
-    brand_name += "         **   **            ** ** ***            *** ***  \n"
-    brand_name += "         **   **            ** **   ***            ** *** \n"
-    brand_name += "          **  **            *  **     **            ** ** \n"
-    brand_name += "           ** *      *         *      **             * *  \n"
-    brand_name += "            ***     *      ****     ***    ***        *   \n"
-    brand_name += "             *******      *  ********     *  *********    \n"
-    brand_name += "               ***       *     ****      *     *****      \n"
-    brand_name += "                         *               *                \n"
-    brand_name += "                          **              **              \n"
+    brand_name =  "          ****           *      ***** **         *******    \n"
+    brand_name += "         *  *************    ******  ***       *       ***  \n"
+    brand_name += "        *     *********     **   *  * **      *         **  \n"
+    brand_name += "        *     *  *         *    *  *  **      **        *   \n"
+    brand_name += "         **  *  **             *  *   *        ***          \n"
+    brand_name += "            *  ***            ** **  *        ** ***        \n"
+    brand_name += "           **   **            ** ** *          *** ***      \n"
+    brand_name += "           **   **            ** ***             *** ***    \n"
+    brand_name += "           **   **            ** ** ***            *** ***  \n"
+    brand_name += "           **   **            ** **   ***            ** *** \n"
+    brand_name += "            **  **            *  **     **            ** ** \n"
+    brand_name += "             ** *      *         *      **             * *  \n"
+    brand_name += "              ***     *      ****     ***    ***        *   \n"
+    brand_name += "               *******      *  ********     *  *********    \n"
+    brand_name += "                 ***       *     ****      *     *****      \n"
+    brand_name += "                           *               *                \n"
+    brand_name += "                            **              **              \n"
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -119,11 +119,11 @@ def prompt_valid_value(content, tag, password=False):
 def load_client_details():
     response = requests.get("http://ip-api.com/json")
     data = response.json()
-    print(Colorate.Horizontal(Colors.rainbow, '=============[ 𝐋𝐎𝐂𝐀𝐓𝐈𝐎𝐍 ]============='))
+    print(Colorate.Horizontal(Colors.rainbow, '=============[ LOCATION ]============='))
     print(Colorate.Horizontal(Colors.rainbow, f'Ip Address : {data.get("query")}.'))
     print(Colorate.Horizontal(Colors.rainbow, f'Location   : {data.get("city")} {data.get("regionName")} {data.get("countryCode")}.'))
     print(Colorate.Horizontal(Colors.rainbow, f'Country    : {data.get("country")} {data.get("zip")}.'))
-    print(Colorate.Horizontal(Colors.rainbow, '===============[ 𝐌𝐄𝐍𝐔 ]==============='))
+    print(Colorate.Horizontal(Colors.rainbow, '===============[ MENU ]==============='))
 
 def interpolate_color(start_color, end_color, fraction):
     start_rgb = tuple(int(start_color[i:i+2], 16) for i in (1, 3, 5))
@@ -180,41 +180,41 @@ if __name__ == "__main__":
             load_key_data(cpm)
             load_client_details()
             choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
-            print(Colorate.Horizontal(Colors.rainbow, '{01}: Increase Money           1.5K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{02}: Increase Coins           4.5K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{03}: King Rank                8K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{04}: Change ID                4.5K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{05}: Change Name              100'))
-            print(Colorate.Horizontal(Colors.rainbow, '{06}: Change Name (Rainbow)    100'))
-            print(Colorate.Horizontal(Colors.rainbow, '{07}: Number Plates            2K'))
+            print(Colorate.Horizontal(Colors.rainbow, '{01}: Increase Money           99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{02}: Increase Coins           99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{03}: King Rank                99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{04}: Change ID                99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{05}: Change Name              99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{06}: Change Name (Rainbow)    99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{07}: Number Plates            99'))
             print(Colorate.Horizontal(Colors.rainbow, '{08}: Account Delete           FREE'))
             print(Colorate.Horizontal(Colors.rainbow, '{09}: Account Register         FREE'))
-            print(Colorate.Horizontal(Colors.rainbow, '{10}: Delete Friends           500'))
-            print(Colorate.Horizontal(Colors.rainbow, '{11}: Unlock Paid Cars         5k'))
-            print(Colorate.Horizontal(Colors.rainbow, '{12}: Unlock all Cars          6K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{13}: Unlock all Cars Siren    3.5K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{14}: Unlock w16 Engine        4K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{15}: Unlock All Horns         3K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{16}: Unlock Disable Damage    3K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{17}: Unlock Unlimited Fuel    3K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{18}: Unlock House 3           4K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{19}: Unlock Smoke             4K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{20}: Unlock Wheels            4K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{21}: Unlock Animations        2K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{22}: Unlock Equipaments M     3K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{23}: Unlock Equipaments F     3K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{24}: Change Race Wins         1K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{25}: Change Race Loses        1K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{26}: Clone Account            7K'))
-            print(Colorate.Horizontal(Colors.rainbow, '{27}: Glitch car               2.5k'))
-            print(Colorate.Horizontal(Colors.rainbow, '{28}: Custom Angle             1.5k'))
+            print(Colorate.Horizontal(Colors.rainbow, '{10}: Delete Friends           99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{11}: Unlock Paid Cars         99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{12}: Unlock all Cars          99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{13}: Unlock all Cars Siren    99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{14}: Unlock w16 Engine        99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{15}: Unlock All Horns         99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{16}: Unlock Disable Damage    99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{17}: Unlock Unlimited Fuel    99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{18}: Unlock House 3           99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{19}: Unlock Smoke             99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{20}: Unlock Wheels            99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{21}: Unlock Animations        99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{22}: Unlock Equipaments M     99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{23}: Unlock Equipaments F     99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{24}: Change Race Wins         99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{25}: Change Race Loses        99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{26}: Clone Account            99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{27}: Glitch car               99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{28}: Custom Angle             99'))
             print(Colorate.Horizontal(Colors.rainbow, '{0} : Exit'))
             
-            print(Colorate.Horizontal(Colors.rainbow, '===============[ 𝐂𝐏𝐌 ]==============='))
+            print(Colorate.Horizontal(Colors.rainbow, '===============[ SERVICE ]==============='))
             
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
-            print(Colorate.Horizontal(Colors.rainbow, '===============[ 𝐂𝐏𝐌 ]==============='))
+            print(Colorate.Horizontal(Colors.rainbow, '===============[ PROCESSING, PLS WAIT! ]==============='))
             
             if service == 0: # Exit
                 print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
