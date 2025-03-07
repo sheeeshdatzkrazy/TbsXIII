@@ -40,23 +40,23 @@ def gradient_text(text, colors):
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')    
     
-    brand_name =  "        ****           *      ***** **         *******    \n"
-    brand_name += "       *  *************    ******  ***       *       ***  \n"
-    brand_name += "      *     *********     **   *  * **      *         **  \n"
-    brand_name += "      *     *  *         *    *  *  **      **        *   \n"
-    brand_name += "       **  *  **             *  *   *        ***          \n"
-    brand_name += "          *  ***            ** **  *        ** ***        \n"
-    brand_name += "         **   **            ** ** *          *** ***      \n"
-    brand_name += "         **   **            ** ***             *** ***    \n"
-    brand_name += "         **   **            ** ** ***            *** ***  \n"
-    brand_name += "         **   **            ** **   ***            ** *** \n"
-    brand_name += "          **  **            *  **     **            ** ** \n"
-    brand_name += "           ** *      *         *      **             * *  \n"
-    brand_name += "            ***     *      ****     ***    ***        *   \n"
-    brand_name += "             *******      *  ********     *  *********    \n"
-    brand_name += "               ***       *     ****      *     *****      \n"
-    brand_name += "                         *               *                \n"
-    brand_name += "                          **              **              \n"
+    brand_name =  "          ****           *      ***** **         *******    \n"
+    brand_name += "         *  *************    ******  ***       *       ***  \n"
+    brand_name += "        *     *********     **   *  * **      *         **  \n"
+    brand_name += "        *     *  *         *    *  *  **      **        *   \n"
+    brand_name += "         **  *  **             *  *   *        ***          \n"
+    brand_name += "            *  ***            ** **  *        ** ***        \n"
+    brand_name += "           **   **            ** ** *          *** ***      \n"
+    brand_name += "           **   **            ** ***             *** ***    \n"
+    brand_name += "           **   **            ** ** ***            *** ***  \n"
+    brand_name += "           **   **            ** **   ***            ** *** \n"
+    brand_name += "            **  **            *  **     **            ** ** \n"
+    brand_name += "             ** *      *         *      **             * *  \n"
+    brand_name += "              ***     *      ****     ***    ***        *   \n"
+    brand_name += "               *******      *  ********     *  *********    \n"
+    brand_name += "                 ***       *     ****      *     *****      \n"
+    brand_name += "                           *               *                \n"
+    brand_name += "                            **              **              \n"
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -67,7 +67,7 @@ def banner(console):
     print(Colorate.Horizontal(Colors.rainbow, '=================================================================='))
     print(Colorate.Horizontal(Colors.rainbow, '\t         𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋'))
     print(Colorate.Horizontal(Colors.rainbow, '    𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃'))
-    print(Colorate.Horizontal(Colors.rainbow, f' ‌           𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__GROUP_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.rainbow, f' ‌              𝐂𝐀𝐑 𝐏𝐀𝐑𝐊𝐈𝐍𝐆 𝐌𝐔𝐋𝐓𝐈𝐏𝐋𝐀𝐘𝐄𝐑 𝟏__}'))
     print(Colorate.Horizontal(Colors.rainbow, '=================================================================='))
 
 def load_player_data(cpm):
