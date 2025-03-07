@@ -178,7 +178,7 @@ def gradient_text(text, colors):
         for x, char in enumerate(line):
             if char != ' ':
                 color_index = int(((x / (width - 1 if width > 1 else 1)) + (y / (height - 1 if height > 1 else 1))) * 0.5 * (len(colors) - 1))
-                color_index = min(max(color_index, 0), len(colors) - 1)  Ensure the index is within bounds
+                color_index = min(max(color_index, 0), len(colors) - 1)  # Ensure the index is within bounds
                 style = Style(color=colors[color_index])
                 colorful_text.append(char, style=style)
             else:
