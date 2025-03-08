@@ -1,6 +1,6 @@
 import requests
 
-__ENDPOINT_URL__: str = "https://cylotool.squareweb.app/api"
+__ENDPOINT_URL__: str = "https://maroon-echidna-796942.hostingersite.com/api"
 
 class TbsXIII:
     def __init__(self, access_key) -> None:
