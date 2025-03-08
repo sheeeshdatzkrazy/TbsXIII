@@ -207,7 +207,7 @@ if __name__ == "__main__":
             print(Colorate.Horizontal(Colors.rainbow, '{24}: Change Race Wins         99'))
             print(Colorate.Horizontal(Colors.rainbow, '{25}: Change Race Loses        99'))
             print(Colorate.Horizontal(Colors.rainbow, '{26}: Clone Account            99'))
-            print(Colorate.Horizontal(Colors.rainbow, '{27}: Glitch car               99'))
+            print(Colorate.Horizontal(Colors.rainbow, '{27}: Glitch Car               99'))
             print(Colorate.Horizontal(Colors.rainbow, '{28}: Custom Angle             99'))
             print(Colorate.Horizontal(Colors.rainbow, '{0} : Exit'))
             
